@@ -8,7 +8,11 @@ export const DEMO_CREDENTIALS = {
 export async function loginAsAdmin(page: Page): Promise<void> {
   await page.goto('/');
 
-  const emailInput = page.locator('input[name="username"], input[name="email"]').first();
+  const emailInput = page
+    .locator(
+      'input[name="username"], input[name="email"], input[placeholder*="email" i], input[type="text"]'
+    )
+    .first();
   const passwordInput = page.locator('input[name="password"]').first();
 
   await emailInput.fill(DEMO_CREDENTIALS.email);
