@@ -1,0 +1,44 @@
+[
+  {
+    "name": "TC1 - Web App - Implement user authentication in To Do",
+    "workspace": "Web Application",
+    "taskTitle": "Implement user authentication",
+    "column": "To Do",
+    "expectedTags": ["Feature", "High Priority"]
+  },
+  {
+    "name": "TC2 - Web App - Fix navigation bug in To Do",
+    "workspace": "Web Application",
+    "taskTitle": "Fix navigation bug",
+    "column": "To Do",
+    "expectedTags": ["Bug"]
+  },
+  {
+    "name": "TC3 - Web App - Design system updates in In Progress",
+    "workspace": "Web Application",
+    "taskTitle": "Design system updates",
+    "column": "In Progress",
+    "expectedTags": ["Design"]
+  },
+  {
+    "name": "TC4 - Mobile App - Push notification system in To Do",
+    "workspace": "Mobile Application",
+    "taskTitle": "Push notification system",
+    "column": "To Do",
+    "expectedTags": ["Feature"]
+  },
+  {
+    "name": "TC5 - Mobile App - Offline mode in In Progress",
+    "workspace": "Mobile Application",
+    "taskTitle": "Offline mode",
+    "column": "In Progress",
+    "expectedTags": ["Feature", "High Priority"]
+  },
+  {
+    "name": "TC6 - Mobile App - App icon design in Done",
+    "workspace": "Mobile Application",
+    "taskTitle": "App icon design",
+    "column": "Done",
+    "expectedTags": ["Design"]
+  }
+]
