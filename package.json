@@ -1,7 +1,6 @@
 {
   "name": "asana-playwright-eval",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
     "test": "playwright test tests/e2e/tasks.spec.ts --project=chromium",
     "test:all": "playwright test",
@@ -9,8 +8,6 @@
     "test:ui": "playwright test --ui",
     "report": "playwright show-report"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "description": "Data-driven Playwright TypeScript evaluation for Asana-style board validation.",
   "devDependencies": {
