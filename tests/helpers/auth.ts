@@ -13,7 +13,9 @@ export async function loginAsAdmin(page: Page): Promise<void> {
       'input[name="username"], input[name="email"], input[placeholder*="email" i], input[type="text"]'
     )
     .first();
-  const passwordInput = page.locator('input[name="password"]').first();
+  const passwordInput = page
+    .locator('input[name="password"], input[type="password"], input[placeholder*="password" i]')
+    .first();
 
   await emailInput.fill(DEMO_CREDENTIALS.email);
   await passwordInput.fill(DEMO_CREDENTIALS.password);
