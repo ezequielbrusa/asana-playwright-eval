@@ -22,7 +22,7 @@ export function getColumn(page: Page, columnName: TaskCase['column']): Locator {
     name: new RegExp(`^${escapeRegex(columnName)}\\b`, 'i'),
   });
 
-  return page.locator('section, article').filter({ has: columnHeading }).first();
+  return page.locator('section, div, article').filter({ has: columnHeading }).first();
 }
 
 export function getTaskCardInColumn(
@@ -36,7 +36,7 @@ export function getTaskCardInColumn(
     name: new RegExp(`^${escapeRegex(taskTitle)}$`, 'i'),
   });
 
-  return column.locator('section, article').filter({ has: taskHeading }).first();
+  return column.locator('section, div, article').filter({ has: taskHeading }).first();
 }
 
 export async function expectTaskInColumn(
